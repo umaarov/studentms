@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BatchController;
 use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
@@ -23,3 +24,4 @@ Route::get('/', function () {
 Route::resource('/students', StudentController::class);
 Route::resource('/teachers', TeacherController::class);
 Route::resource('/courses', CourseController::class);
+Route::resource('/batches', BatchController::class);
